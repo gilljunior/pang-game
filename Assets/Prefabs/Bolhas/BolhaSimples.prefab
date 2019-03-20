@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tamanho: 5
-  forcaInicial: 5
+  forcaHorInicial: 2
+  forcaVerInicial: 4
   rB: {fileID: 7340400187755728401}
   cC: {fileID: 7340400187755728402}
