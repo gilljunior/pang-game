@@ -23,19 +23,13 @@ public class Bolha : MonoBehaviour
         rB.AddForce(new Vector2(forcaHorInicial, forcaVerInicial), ForceMode2D.Impulse);
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("Arrow"))
-        {
-            aoSerAcertada.Executar();
-        }
-    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Corda"))
+        if (col.gameObject.CompareTag("Corda") || col.gameObject.CompareTag("Arrow"))
         {
             aoSerAcertada.Executar();
+
         }
     }
 }

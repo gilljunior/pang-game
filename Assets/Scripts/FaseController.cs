@@ -8,6 +8,8 @@ public class FaseController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        //Instantiate(new BolhaSimples());
         
     }
 

@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a925cbd5afce1444da14d812fc43ffeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanho: 5
+  tamanho: 3
   forcaHorInicial: 2
   forcaVerInicial: 4
   rB: {fileID: 7340400187755728401}
