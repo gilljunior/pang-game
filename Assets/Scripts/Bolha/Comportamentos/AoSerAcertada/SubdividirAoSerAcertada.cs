@@ -13,9 +13,9 @@ public class SubdividirAoSerAcertada : MonoBehaviour, IAoSerAcertada
         _perdaDeTamanho = perdaDeTamanho;
     }
 
-    public void Executar(GameObject obj)
+    public void Executar()
     {
-        obj.SetActive(false);
+        _bolha.gameObject.SetActive(false);
         var novoTamanho = _bolha.tamanho - _perdaDeTamanho;
 
         if (novoTamanho <= 0)

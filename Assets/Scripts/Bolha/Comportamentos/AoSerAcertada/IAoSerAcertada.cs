@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public interface IAoSerAcertada
+﻿public interface IAoSerAcertada
 {
-    void Executar(GameObject obj);
+    void Executar();
 }

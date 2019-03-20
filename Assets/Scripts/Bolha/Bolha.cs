@@ -27,7 +27,7 @@ public class Bolha : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Arrow"))
         {
-            aoSerAcertada.Executar(gameObject);
+            aoSerAcertada.Executar();
         }
     }
 
@@ -35,7 +35,7 @@ public class Bolha : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Corda"))
         {
-            aoSerAcertada.Executar(gameObject);
+            aoSerAcertada.Executar();
         }
     }
 }
