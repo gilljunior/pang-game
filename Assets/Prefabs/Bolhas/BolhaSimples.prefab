@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7340400187755728403}
   - component: {fileID: 7340400187755728401}
   - component: {fileID: 7340400187755728402}
-  - component: {fileID: 2477904502595312998}
+  - component: {fileID: 621179616660984525}
   m_Layer: 0
-  m_Name: Inimigo
+  m_Name: BolhaSimples
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7340400187755728405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.92, y: -0.51, z: 0.07990057}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalPosition: {x: -5.41, y: 2.78, z: 0.07990057}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -118,8 +118,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4.7804747
---- !u!114 &2477904502595312998
+  m_Radius: 0.23781317
+--- !u!114 &621179616660984525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,6 +128,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7340400187755728405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb0462c88f2d984c8e5b911053024bd, type: 3}
+  m_Script: {fileID: 11500000, guid: a925cbd5afce1444da14d812fc43ffeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tamanho: 5
+  forcaInicial: 5
+  rB: {fileID: 7340400187755728401}
+  cC: {fileID: 7340400187755728402}

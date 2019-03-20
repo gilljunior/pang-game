@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Jogador : MonoBehaviour
 {
-
     public float velocidade = 0.1f;
     public float forcaPulo = 17f;
     public Rigidbody2D rb;
@@ -47,15 +46,11 @@ public class Jogador : MonoBehaviour
         Instantiate(Flecha, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
     }
 
-
     void OnCollisionEnter2D(Collision2D col)
     {
-
         if (col.gameObject.CompareTag("Inimigo"))
         {
             SceneManager.LoadScene(0);
         }
     }
-
-
 }

@@ -43,7 +43,7 @@ public class Flecha : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(corda);
-            Instantiate(Inimigo, new Vector2(-5, 2), Quaternion.identity);
+            // Instantiate(Inimigo, new Vector2(-5, 2), Quaternion.identity);
         }
     }
 }
