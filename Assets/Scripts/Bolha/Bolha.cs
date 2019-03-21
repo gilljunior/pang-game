@@ -26,10 +26,9 @@ public class Bolha : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Corda") || col.gameObject.CompareTag("Arrow"))
+        if (col.gameObject.CompareTag("Arma"))
         {
             aoSerAcertada.Executar();
-
         }
     }
 }
