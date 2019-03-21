@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,12 +10,17 @@ public class Jogador : MonoBehaviour
     public float forcaPulo = 17f;
     public Rigidbody2D rb;
 
-    public GameObject Flecha;
+    public int qtdPulos = 2;
+    private int puloAtual = 0;
+
+    public Projetil projetilAtual;
+
+    public List<Projetil> projeteisPossiveis;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        projetilAtual = projeteisPossiveis.FirstOrDefault(x => x.GetType() == typeof(Bala));
     }
 
     // Update is called once per frame
@@ -38,19 +44,31 @@ public class Jogador : MonoBehaviour
     
     public void Pular()
     {
-        rb.AddForce(new Vector2(0, forcaPulo), ForceMode2D.Impulse);
+        if(puloAtual < qtdPulos)
+        {
+            rb.AddForce(new Vector2(0, forcaPulo), ForceMode2D.Impulse);
+            puloAtual++;
+        }
+
     }
 
     public void Atirar()
     {
-        Instantiate(Flecha, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+        Instantiate(projetilAtual, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
     }
+
+
 
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Inimigo"))
         {
             SceneManager.LoadScene(0);
+        }
+
+        if (col.gameObject.CompareTag("Plataforma"))
+        {
+            puloAtual = 0;
         }
     }
 }

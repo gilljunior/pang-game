@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Arma : MonoBehaviour
+public class Bala : Projetil
 {
-
-    public abstract void Atirar();
-
 }
