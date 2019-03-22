@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Jogador : MonoBehaviour
 {
     public float velocidade = 0.1f;
-    public float forcaPulo = 17f;
+    public float forcaPulo = 12f;
     public Rigidbody2D rb;
 
     public int qtdPulos = 2;

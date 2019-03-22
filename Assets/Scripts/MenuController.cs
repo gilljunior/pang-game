@@ -9,4 +9,9 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void Fase1()
+    {
+        SceneManager.LoadScene(2);
+    }
 }

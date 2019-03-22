@@ -2,6 +2,6 @@
 {
     void Awake()
     {
-        aoSerAcertada = new SubdividirAoSerAcertada(this, 2, 1);
+        aoSerAcertada = new SubdividirAoSerAcertada(this, 3, 1);
     }
 }

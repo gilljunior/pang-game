@@ -11,13 +11,6 @@ public class Flecha : Projetil
         startPosY = transform.position.y;
 
     }
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag("Inimigo"))
-        {
-            Destroy(gameObject);
-        }
-    }
+    
     
 }

@@ -23,4 +23,18 @@ public abstract class Projetil : MonoBehaviour
         transform.position = new Vector2(transform.position.x, transform.position.y + velocidade);
 
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Inimigo"))
+        {
+            Destroy(gameObject);
+        }
+
+        if (col.gameObject.CompareTag("Plataforma"))
+        {
+            Destroy(gameObject);
+        }
+    }
+    
 }
