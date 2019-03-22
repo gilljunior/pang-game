@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2741882940873882993}
   - component: {fileID: 2741882940873882992}
   - component: {fileID: 2741882940873882989}
+  - component: {fileID: 3918975460649244326}
   m_Layer: 0
   m_Name: Jogador
   m_TagString: Player
@@ -139,3 +140,15 @@ MonoBehaviour:
   projeteisPossiveis:
   - {fileID: 4335088048021300174, guid: cc897a3c12f74c24d8ab1365b398942e, type: 3}
   - {fileID: 7548180213441682741, guid: 00915fd08f117d04eba3d8dd3ea6a749, type: 3}
+--- !u!114 &3918975460649244326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741882940873882994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da6b9ea8329a4d4c88b90be9a9f2991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
