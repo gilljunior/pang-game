@@ -32,7 +32,7 @@ public class Jogador : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Inimigo"))
         {
-            SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
         }
     }
 }

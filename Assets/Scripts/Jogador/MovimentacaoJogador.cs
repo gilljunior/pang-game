@@ -2,7 +2,7 @@
 
 public class MovimentacaoJogador : MonoBehaviour
 {
-    public float velocidade = 10f;
+    public float velocidade = 0.1f;
 
     public float forcaPulo = 12f;
     public int qtdPulos = 2;
@@ -55,7 +55,18 @@ public class MovimentacaoJogador : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Plataforma"))
         {
+            gameObject.transform.SetParent(col.gameObject.transform);
             puloAtual = 0;
+        }
+    }
+
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Plataforma"))
+        {
+            gameObject.transform.SetParent(null);
+           
         }
     }
 }

@@ -95,7 +95,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.67884505
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -132,10 +132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad1e1b2b9ef72c48a8a2b4d0a01c4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 0.1
-  forcaPulo: 12
-  rb: {fileID: 2741882940873882993}
-  qtdPulos: 2
   projetilAtual: {fileID: 0}
   projeteisPossiveis:
   - {fileID: 4335088048021300174, guid: cc897a3c12f74c24d8ab1365b398942e, type: 3}
@@ -152,3 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da6b9ea8329a4d4c88b90be9a9f2991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidade: 0.1
+  forcaPulo: 12
+  qtdPulos: 2
