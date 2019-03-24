@@ -40,6 +40,7 @@ public class MovimentacaoJogador : MonoBehaviour
     {
         if (puloAtual < qtdPulos)
         {
+            rb.velocity = Vector3.zero;
             rb.AddForce(new Vector2(0, forcaPulo), ForceMode2D.Impulse);
             puloAtual++;
         }
