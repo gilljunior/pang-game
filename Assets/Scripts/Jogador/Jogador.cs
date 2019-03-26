@@ -7,13 +7,10 @@ using UnityEngine.SceneManagement;
 public class Jogador : MonoBehaviour
 {
     public Projetil projetilAtual;
-
-    public List<Projetil> projeteisPossiveis;
-
+       
     // Start is called before the first frame update
     void Start()
     {
-        projetilAtual = projeteisPossiveis.FirstOrDefault(x => x.GetType() == typeof(Bala));
     }
 
     // Update is called once per frame
@@ -30,9 +27,12 @@ public class Jogador : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Inimigo"))
-        {
-            //SceneManager.LoadScene(0);
+
+        if (col.gameObject.CompareTag("Drop"))
+        {            
+            projetilAtual = col.gameObject.GetComponent<Drop>().projetilSorteado;
         }
     }
+
+
 }

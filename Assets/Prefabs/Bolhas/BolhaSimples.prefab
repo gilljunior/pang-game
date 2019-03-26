@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7340400187755728401}
   - component: {fileID: 7340400187755728402}
   - component: {fileID: 621179616660984525}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BolhaSimples
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
