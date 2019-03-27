@@ -26,6 +26,7 @@ public class MovimentacaoJogador : MonoBehaviour
 
         if (axis != 0)
         {
+
             transform.position = new Vector2(transform.position.x + velocidade * Time.deltaTime * (axis * 100), transform.position.y);
 
             if ((axis > 0 && !viradoDireita) || (axis < 0 && viradoDireita))

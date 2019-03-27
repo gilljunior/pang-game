@@ -1,7 +1,12 @@
-﻿public class BolhaSimples : Bolha
+﻿
+using UnityEngine;
+public class BolhaSimples : Bolha
 {
+    public GameObject drop;
+
     void Awake()
     {
-        aoSerAcertada = new SubdividirAoSerAcertada(this, 3, 1);
+        aoSerAcertada.Add(new SubdividirAoSerAcertada(this, 2, 1));
+        aoSerAcertada.Add(new DroparItem(this, drop, 5));
     }
 }

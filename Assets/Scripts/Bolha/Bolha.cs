@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Bolha : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class Bolha : MonoBehaviour
     public CircleCollider2D cC;
 
     // Comportamento da bolha ao ser acertada
-    protected IAoSerAcertada aoSerAcertada;
+    protected List<IAoSerAcertada> aoSerAcertada = new List<IAoSerAcertada>();
 
     private void Start()
     {
@@ -28,7 +29,10 @@ public class Bolha : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Arma"))
         {
-            aoSerAcertada.Executar();
+            foreach (var comportamento in aoSerAcertada)
+            {
+                comportamento.Executar();
+            }
         }
     }
 }

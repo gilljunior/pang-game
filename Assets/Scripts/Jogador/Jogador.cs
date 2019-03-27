@@ -11,6 +11,7 @@ public class Jogador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -27,12 +28,19 @@ public class Jogador : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-
         if (col.gameObject.CompareTag("Drop"))
         {            
-            projetilAtual = col.gameObject.GetComponent<Drop>().projetilSorteado;
+            projetilAtual = col.gameObject.GetComponent<Drop>().sortearProjetil();
+            Destroy(col.gameObject);
+        }
+
+        if (col.gameObject.CompareTag("Inimigo"))
+        {
+            SceneManager.LoadScene(0);
         }
     }
+
+
 
 
 }

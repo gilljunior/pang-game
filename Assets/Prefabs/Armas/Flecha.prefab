@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6776892503562657154}
   - component: {fileID: 3385522395681864290}
   - component: {fileID: 2195478918387019808}
-  - component: {fileID: 4335088048021300174}
+  - component: {fileID: 600749557808301067}
   m_Layer: 0
   m_Name: flecha
   m_TagString: Arma
@@ -107,7 +107,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4376794, y: 1.8020648}
   m_EdgeRadius: 0
---- !u!114 &4335088048021300174
+--- !u!114 &600749557808301067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,4 +119,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb3a30f156d94846818817c930d8f1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 0.1
+  velocidade: 0.2

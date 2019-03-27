@@ -136,3 +136,4 @@ MonoBehaviour:
   forcaVerInicial: 4
   rB: {fileID: 7340400187755728401}
   cC: {fileID: 7340400187755728402}
+  drop: {fileID: 4356514549813223224, guid: 8f97479775df0024ab68ebf2aa2864d8, type: 3}

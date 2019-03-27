@@ -98,8 +98,7 @@ MonoBehaviour:
   InimigoCollider: {fileID: 0}
   projeteisPossiveis:
   - {fileID: 7548180213441682741, guid: 00915fd08f117d04eba3d8dd3ea6a749, type: 3}
-  - {fileID: 4335088048021300174, guid: cc897a3c12f74c24d8ab1365b398942e, type: 3}
-  projetilSorteado: {fileID: 0}
+  - {fileID: 600749557808301067, guid: cc897a3c12f74c24d8ab1365b398942e, type: 3}
 --- !u!50 &452779286
 Rigidbody2D:
   serializedVersion: 4
