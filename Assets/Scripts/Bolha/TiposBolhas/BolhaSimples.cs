@@ -1,5 +1,5 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
+
 public class BolhaSimples : Bolha
 {
     public GameObject drop;
