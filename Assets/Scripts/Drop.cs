@@ -23,7 +23,7 @@ public class Drop : MonoBehaviour
         
     }
 
-    public Projetil sortearProjetil()
+    public Projetil SortearProjetil()
     {
         System.Random rd = new System.Random();
         var nb = rd.Next(0, projeteisPossiveis.Count);

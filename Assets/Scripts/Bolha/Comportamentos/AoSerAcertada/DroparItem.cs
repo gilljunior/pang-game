@@ -1,14 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using UnityEngine;
 
-public class DroparItem : MonoBehaviour, IAoSerAcertada
+public class DroparItem : IAoSerAcertada
 {
-
     private readonly Bolha _bolha;
-    private GameObject _drop;
-    private int _probabilidadeDrop;
+    private readonly GameObject _drop;
+    private readonly int _probabilidadeDrop;
 
     public DroparItem(Bolha bolha, GameObject drop, int probabilidadeDrop)
     {
@@ -24,8 +20,7 @@ public class DroparItem : MonoBehaviour, IAoSerAcertada
 
         if(result == 1)
         {
-            Instantiate(_drop, new Vector2(_bolha.transform.position.x, _bolha.transform.position.y), Quaternion.identity);
+            Object.Instantiate(_drop, new Vector2(_bolha.transform.position.x, _bolha.transform.position.y), Quaternion.identity);
         }
     }
-
 }

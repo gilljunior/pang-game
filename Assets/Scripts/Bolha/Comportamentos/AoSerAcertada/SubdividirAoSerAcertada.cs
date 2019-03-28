@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class SubdividirAoSerAcertada : MonoBehaviour, IAoSerAcertada
+public class SubdividirAoSerAcertada : IAoSerAcertada
 {
     private readonly Bolha _bolha;
     private readonly int _qtdFilhos;
@@ -40,7 +40,7 @@ public class SubdividirAoSerAcertada : MonoBehaviour, IAoSerAcertada
             }
 
             _bolha.transform.position = new Vector2(posX, posY);
-            var novaBolha = Instantiate(_bolha);
+            var novaBolha = Object.Instantiate(_bolha);
 
             novaBolha.tamanho = novoTamanho;
             novaBolha.gameObject.SetActive(true);

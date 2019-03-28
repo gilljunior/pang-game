@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Jogador : MonoBehaviour
@@ -17,7 +14,6 @@ public class Jogador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Space)) Atirar();
     }
 
@@ -30,17 +26,13 @@ public class Jogador : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Drop"))
         {            
-            projetilAtual = col.gameObject.GetComponent<Drop>().sortearProjetil();
+            projetilAtual = col.gameObject.GetComponent<Drop>().SortearProjetil();
             Destroy(col.gameObject);
         }
 
         if (col.gameObject.CompareTag("Inimigo"))
         {
-            // SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);
         }
     }
-
-
-
-
 }
