@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad1e1b2b9ef72c48a8a2b4d0a01c4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projetilAtual: {fileID: 600749557808301067, guid: cc897a3c12f74c24d8ab1365b398942e,
+  _projetilInicial: {fileID: 600749557808301067, guid: cc897a3c12f74c24d8ab1365b398942e,
     type: 3}
 --- !u!114 &3918975460649244326
 MonoBehaviour:

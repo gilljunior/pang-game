@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Projetil : MonoBehaviour
 {
     public float velocidade;
+    public float taxaDeTiro;
     private float heightCamera;
 
     // Start is called before the first frame update
@@ -21,7 +22,6 @@ public abstract class Projetil : MonoBehaviour
         }
 
         transform.position = new Vector2(transform.position.x, transform.position.y + velocidade);
-
     }
 
     void OnTriggerEnter2D(Collider2D col)
